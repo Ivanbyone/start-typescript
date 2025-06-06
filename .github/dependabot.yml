@@ -4,7 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 20
+    rebase-strategy: "disabled"
     labels:
       - "dependencies" 
       - "auto-merge"
@@ -12,4 +13,4 @@ updates:
       prefix: "chore(deps)"
     ignore:
       - dependency-name: "*"
-        update-type: "version-update:semver-major"
+        update-types: ["version-update:semver-major"]
