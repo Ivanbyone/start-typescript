@@ -12,4 +12,9 @@ updates:
       prefix: "chore(deps)"
     allow:
       - dependency-type: "production"
-        update-types: ["patch", "minor"]
+        dependency-name: "*"
+        update-type: "minor" 
+
+      - dependency-type: "production"
+        dependency-name: "*"
+        update-type: "patch"
