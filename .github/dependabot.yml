@@ -10,11 +10,6 @@ updates:
       - "auto-merge"
     commit-message:
       prefix: "chore(deps)"
-    allow:
-      - dependency-type: "production"
-        dependency-name: "*"
-        update-type: "minor" 
-
-      - dependency-type: "production"
-        dependency-name: "*"
-        update-type: "patch"
+    ignore:
+      - dependency-name: "*"
+        update-type: "version-update:semver-major"
